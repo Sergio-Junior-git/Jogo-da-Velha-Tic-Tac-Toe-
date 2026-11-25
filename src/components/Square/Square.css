@@ -1,0 +1,39 @@
+.square {
+  display: grid;
+  aspect-ratio: 1;
+  place-items: center;
+  border: 1px solid #324653;
+  border-radius: 14px;
+  background: #1a2832;
+  color: #f1f7f8;
+  font-family: inherit;
+  font-size: clamp(3rem, 14vw, 5rem);
+  font-weight: 750;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 150ms ease, border-color 150ms ease, transform 150ms ease;
+}
+
+.square:not(:disabled):hover {
+  transform: translateY(-2px);
+  border-color: #62d6b0;
+  background: #213540;
+}
+
+.square:focus-visible {
+  z-index: 1;
+  outline: 3px solid #62d6b0;
+  outline-offset: 2px;
+}
+
+.square-x {
+  color: #62d6b0;
+}
+
+.square-o {
+  color: #ffbd75;
+}
+
+.square:disabled {
+  cursor: default;
+}

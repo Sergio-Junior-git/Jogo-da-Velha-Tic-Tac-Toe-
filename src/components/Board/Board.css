@@ -1,0 +1,56 @@
+.board-panel {
+  width: min(100%, 350px);
+  margin: 30px auto 0;
+}
+
+.game-status {
+  min-height: 30px;
+  margin: 0 0 18px;
+  color: #d3e2e8;
+  font-size: 1.05rem;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+}
+
+.game-status.is-finished {
+  color: #a7f3d0;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.restart-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 24px;
+  padding: 12px 20px;
+  border: 1px solid #405564;
+  border-radius: 10px;
+  background: #1d2b36;
+  color: #edf5f7;
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+  transition: background 150ms ease, border-color 150ms ease, transform 150ms ease;
+}
+
+.restart-button:hover {
+  transform: translateY(-1px);
+  border-color: #62d6b0;
+  background: #263945;
+}
+
+.restart-button:focus-visible {
+  outline: 3px solid #62d6b0;
+  outline-offset: 3px;
+}
+
+.restart-button span {
+  color: #62d6b0;
+  font-size: 1.25rem;
+}
